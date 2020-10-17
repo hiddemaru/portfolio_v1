@@ -1,3 +1,45 @@
 .jumbotron img{
 	border: 8px solid #333;
 }
+
+hr{
+	width: 200px;
+	border-top: 2px solid #333;
+}
+
+section{
+	min-height: 600px;
+	padding: 20px 0;
+
+}
+
+.portfolio{
+	background: #e9ecef;
+}
+
+label{
+	font-weight: bold;
+}
+
+.contact{
+	height: 800px;
+}
+
+.footer{
+	background: #333;
+	width: 100%;
+	height: 160px;
+	padding:40px;
+}
+
+.footer p,
+.footer a {
+	color: #ddd;
+
+}
+
+.fas {
+	color:salmon;
+}
+
+
