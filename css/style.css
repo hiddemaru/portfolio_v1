@@ -1,5 +1,22 @@
+.jumbotron{
+	height:340px ;
+	background-image: url('../img/full/codewall.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	color: #eaeaea;
+	overflow: hidden;
+
+}
+
 .jumbotron img{
-	border: 8px solid #333;
+	border: 8px solid #eaeaea;
+	margin-top: 30px;
+	box-shadow: 1px 1px 10px rgba(200,200,200,.5);
+}
+
+.jumbotron h1, 
+.jumbotron p{
+	text-shadow: 1px 1px 4px rgba(200,200,200,.5);
 }
 
 hr{
@@ -15,6 +32,35 @@ section{
 
 .portfolio{
 	background: #e9ecef;
+}
+
+.portfolio .img-thumbnail{
+	opacity: 0;
+	transition: .5s;
+	transform: translate(0, -60px);
+	margin-bottom: 30px;
+}
+
+/*element landing tubhmnel*/
+.portfolio .img-thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+
+.pLeft, .pRight{
+	opacity: 0;
+	transform: translate(-60px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pRight{
+	transform: translate(60px,0) rotate(-15deg);
+}
+
+.pLeft.pMuncul, .pRight.pMuncul{
+	opacity: 1;
+	transform: translate(0,0);
 }
 
 label{
@@ -41,5 +87,4 @@ label{
 .fas {
 	color:salmon;
 }
-
 
